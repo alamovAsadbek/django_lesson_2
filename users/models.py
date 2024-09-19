@@ -7,8 +7,8 @@ class UserModel(AbstractUser):
         ('student', 'student'),
         ('teacher', 'teacher')
     )
-    phone_number = models.IntegerField(unique=True)
-    status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='student')
+    phone_number = models.CharField(max_length=15, unique=True, verbose_name='Phone Number')
+    status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='student', verbose_name='Status')
 
     class Meta:
         verbose_name = 'User'
