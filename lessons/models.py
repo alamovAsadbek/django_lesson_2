@@ -2,4 +2,5 @@ from django.db import models
 
 
 class Lessons(models.Model):
-    pass
+    name = models.CharField(max_length=100)
+    group_id = models.ForeignKey(GroupModal)
