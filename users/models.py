@@ -9,3 +9,6 @@ class UserModel(AbstractUser):
     )
     phone_number = models.IntegerField(unique=True)
     status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='student')
+
+    class Meta:
+        pass
