@@ -38,6 +38,7 @@ INSTALLED_APPS = [
 
     # local apps
     'users',
+    'groups'
 ]
 
 MIDDLEWARE = [
