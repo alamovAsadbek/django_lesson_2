@@ -2,7 +2,7 @@ from django.contrib.auth.models import AbstractUser
 from django.db import models
 
 
-class UserModel(AbstractUser):
+class UsersModel(AbstractUser):
     STATUS_CHOICES = (
         ('student', 'student'),
         ('teacher', 'teacher')
