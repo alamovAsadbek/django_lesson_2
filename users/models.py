@@ -8,6 +8,8 @@ class UsersModel(models.Model):
     )
     first_name = models.CharField(max_length=100, blank=True, null=True)
     last_name = models.CharField(max_length=100, blank=True, null=True)
+    username = models.CharField(max_length=100, blank=True, null=True)
+    password = models.CharField(max_length=255, blank=True, null=True)
     phone_number = models.CharField(max_length=15, unique=True, verbose_name='Phone Number')
     status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='student', verbose_name='Status')
 
