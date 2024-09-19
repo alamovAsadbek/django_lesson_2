@@ -11,4 +11,5 @@ class UserModel(AbstractUser):
     status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='student')
 
     class Meta:
-        pass
+        verbose_name = 'User'
+        verbose_name_plural = 'Users'
