@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     # local apps
     'users',
     'groups',
-    'group_student'
+    'group_student',
+    'lessons'
 ]
 
 MIDDLEWARE = [
