@@ -2,4 +2,4 @@ from django.db import models
 
 
 class Group(models.Model):
-    pass
+    name = models.CharField(max_length=100, unique=True)
